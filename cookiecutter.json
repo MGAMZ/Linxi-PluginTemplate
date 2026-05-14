@@ -1,0 +1,24 @@
+{
+  "repo_name": "tiansuo-my-plugin",
+  "python_package": "{{ cookiecutter.repo_name|replace('-', '_') }}",
+  "description": "My TianSuo plugin",
+  "author": "Your Name",
+  "email": "you@example.com",
+  "version": "0.1.0",
+  "requires_python": ">=3.12",
+  "license": ["MIT", "BSD-3-Clause", "Apache-2.0", "Proprietary"],
+  "include_processor": ["yes", "no"],
+  "include_probe": ["yes", "no"],
+  "__prompts__": {
+    "repo_name": "输入插件仓库名",
+    "python_package": "输入 Python 包名",
+    "description": "输入插件简介",
+    "author": "输入作者名",
+    "email": "输入作者邮箱",
+    "version": "输入初始版本号",
+    "requires_python": "输入 Python 版本要求",
+    "license": "选择许可证",
+    "include_processor": "是否生成 processor 示例？",
+    "include_probe": "是否生成 probe 示例？"
+  }
+}

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "{{ cookiecutter.repo_name }}"
+version = "{{ cookiecutter.version }}"
+description = "{{ cookiecutter.description }}"
+readme = "README.md"
+requires-python = "{{ cookiecutter.requires_python }}"
+license = "{{ cookiecutter.license }}"
+authors = [
+    { name = "{{ cookiecutter.author }}", email = "{{ cookiecutter.email }}" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["{{ cookiecutter.python_package }}"]
+
+[tool.hatch.build]
+include = [
+    "{{ cookiecutter.python_package }}/**/*.py",
+    "tests/**/*.py",
+    "README.md",
+    "NEXTSTEPS.md",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
