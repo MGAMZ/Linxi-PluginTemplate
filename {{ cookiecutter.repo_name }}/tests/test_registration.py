@@ -3,13 +3,13 @@ import importlib
 import pytest
 
 
-pytest.importorskip("tiansuo")
+pytest.importorskip("linxi")
 {% if cookiecutter.include_probe == "yes" %}
 pytest.importorskip("probeinterface")
 {% endif %}
 
-from tiansuo.processor import PROCESS_STAGES
-from tiansuo.processor.registry import get_processor_registration_name, get_registered_probe, get_registered_processors
+from linxi.processor import PROCESS_STAGES
+from linxi.processor.registry import get_processor_registration_name, get_registered_probe, get_registered_processors
 
 
 def _import_plugin_package():

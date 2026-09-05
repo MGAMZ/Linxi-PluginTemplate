@@ -1,7 +1,7 @@
 {
-  "repo_name": "tiansuo-my-plugin",
+  "repo_name": "linxi-my-plugin",
   "python_package": "{{ cookiecutter.repo_name|replace('-', '_') }}",
-  "description": "My TianSuo plugin",
+  "description": "My Linxi plugin",
   "author": "Your Name",
   "email": "you@example.com",
   "version": "0.1.0",

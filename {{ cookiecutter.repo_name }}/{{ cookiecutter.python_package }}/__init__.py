@@ -1,4 +1,4 @@
-"""TianSuo plugin package template.
+"""Linxi plugin package template.
 
 Importing this package triggers registration of bundled processors and probes.
 """

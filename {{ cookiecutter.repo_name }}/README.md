@@ -2,7 +2,7 @@
 
 {{ cookiecutter.description }}
 
-这个仓库是一个 TianSuo 插件项目骨架。它使用根目录包布局和 hatchling 打包，适合直接作为独立插件仓库继续开发。
+这个仓库是一个 Linxi 插件项目骨架。它使用根目录包布局和 hatchling 打包，适合直接作为独立插件仓库继续开发。
 
 ## 目录结构
 
@@ -18,11 +18,11 @@
 
 ## 插件加载方式
 
-TianSuo 会根据 pipeline 配置中的 `tiansuo_plugin` 导入插件模块。对这个模板来说，通常直接填写包名即可：
+Linxi 会根据 pipeline 配置中的 `linxi_plugin` 导入插件模块。对这个模板来说，通常直接填写包名即可：
 
 ```yaml
 name: demo_pipeline
-tiansuo_plugin:
+linxi_plugin:
   - {{ cookiecutter.python_package }}
 steps:
   - stage: preprocess
@@ -35,8 +35,8 @@ steps:
 ```python
 import {{ cookiecutter.python_package }}
 
-from tiansuo.fabric.task_pipeline import PipelineDefinition
-from tiansuo.fabric.task_runner import TaskRunner
+from linxi.fabric.task_pipeline import PipelineDefinition
+from linxi.fabric.task_runner import TaskRunner
 
 pipeline = PipelineDefinition(name="demo", steps=[])
 runner = TaskRunner(pipeline)

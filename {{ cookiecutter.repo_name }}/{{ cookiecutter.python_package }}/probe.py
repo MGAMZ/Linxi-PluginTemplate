@@ -1,6 +1,6 @@
 import probeinterface as pi
 
-from tiansuo.processor import register_probe_definition
+from linxi.processor import register_probe_definition
 
 
 @register_probe_definition("example_linear_probe")

@@ -23,3 +23,5 @@ ENV/
 .vscode/
 
 tmp/
+AGENTS.md
+.omo
