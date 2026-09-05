@@ -3,6 +3,7 @@
 1. 确保 Linxi 安装在与你的插件相同的 Python 环境中。Linxi 暂未发布到 PyPI，按如下步骤获取并安装：
    - 从临枢团队的分发渠道取得 Linxi 源码目录（克隆地址或离线源码包见竞赛公告，或向临枢团队索取）；
    - 执行 `python -m pip install <Linxi源码目录>`，把 Linxi 连同其依赖装入当前环境。
+   - 若 pip 在解析 Linxi 的依赖直链（如 `linshu-format @ git+https://gitee.com/...`）时提示需要账号凭据，说明该直链仓库未公开；请向临枢团队获取 `linshu-format` 的离线 wheel 或源码包，先单独安装它，再安装 Linxi。
 2. 执行 `python -m pip install -e .`，把当前插件仓库安装为可编辑模式。
 3. 根据你的业务需要修改 `{{ cookiecutter.python_package }}` 包中的示例代码。
 4. 如果你不需要某个示例文件，可以直接删除它，并同步更新 `__init__.py`。
