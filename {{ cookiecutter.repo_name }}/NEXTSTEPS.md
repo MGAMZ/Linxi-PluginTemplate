@@ -8,7 +8,7 @@
 3. 根据你的业务需要修改 `{{ cookiecutter.python_package }}` 包中的示例代码。
 4. 如果你不需要某个示例文件，可以直接删除它，并同步更新 `__init__.py`。
 5. 运行 `python -m pytest`，确认当前插件包至少能通过最小注册测试。
-6. 在 Linxi 的 pipeline YAML 中配置 `linxi_plugin`，验证你的 processor 或 probe 能被发现。
+6. 在 Linxi 的 pipeline YAML 中配置 `linxi_plugin`，验证你的 processor 或 probe 能被发现。YAML 样例与加载入口（`linxi process -c <yaml>` 或 `PipelineDefinition.from_file`）见仓库 `README.md` 的"插件加载方式"一节。
 
 ## 代码修改建议
 
