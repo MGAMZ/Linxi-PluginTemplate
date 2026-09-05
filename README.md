@@ -27,11 +27,13 @@
 python -m pip install -U cookiecutter
 ```
 
-2. 在你希望创建插件仓库的位置执行：
+2. 在你希望创建插件仓库的位置执行，把下面的 `<本仓库克隆路径>` 替换为你克隆本模板仓库的实际位置：
 
 ```bash
-cookiecutter /home/zhangyiqin/workspace/mgam_repos/Linxi-PluginTemplate
+cookiecutter <本仓库克隆路径>
 ```
+
+例如，若你把本模板克隆到了 `~/work/Linxi-PluginTemplate`，则执行 `cookiecutter ~/work/Linxi-PluginTemplate`。
 
 3. 根据提示填写仓库名、Python 包名、版本号等信息。
 
