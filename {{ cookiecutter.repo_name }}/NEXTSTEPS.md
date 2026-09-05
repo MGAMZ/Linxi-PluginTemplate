@@ -1,3 +1,22 @@
+<!--
+  ascii-detection-guard (keep the first 512 bytes of this file ASCII-only):
+  cookiecutter inspects only the first 512 bytes of a template file to decide
+  whether it is binary. A dense non-ASCII head can cut a multibyte character
+  exactly at that boundary, the file is then judged binary, copied out of the
+  generator without rendering, silently, shipping raw Jinja tags to every
+  player. This block guarantees the head decodes cleanly in any environment
+  regardless of the Chinese body below. Do not localize, shorten, reorder or
+  delete this block; if this file is restructured, keep it as the first
+  content and keep it longer than 512 bytes. NEXTSTEPS is the player guide
+  for this Linxi plugin repository: install Linxi into the same Python
+  environment as the plugin, install this repository in editable mode with
+  dev extras, adapt the example processor and probe, run the registration
+  tests with python -m pytest, then configure the linxi_plugin field in a
+  pipeline YAML and load that YAML (CLI: linxi process -c pipeline.yaml, or
+  PipelineDefinition.from_file) to verify processor and probe discovery.
+  See README.md for the YAML sample and the loading entries.
+-->
+
 # 下一步
 
 1. 确保 Linxi 安装在与你的插件相同的 Python 环境中。Linxi 暂未发布到 PyPI，按如下步骤获取并安装：
