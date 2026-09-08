@@ -21,10 +21,10 @@
 
 ## 使用方式
 
-1. 安装 Cookiecutter：
+1. 安装 Cookiecutter（本模板在 `cookiecutter==2.7.1` 下验证，请使用同一版本）：
 
 ```bash
-python -m pip install -U cookiecutter
+python -m pip install cookiecutter==2.7.1
 ```
 
 2. 在你希望创建插件仓库的位置执行，把下面的 `<本仓库克隆路径>` 替换为你克隆本模板仓库的实际位置：

@@ -1,3 +1,8 @@
+<!--
+  ascii-detection-guard: file-type detectors decide text vs binary from a file's leading bytes only, cookiecutter reading the first 512 bytes and binaryornot the first 1024. A Chinese-dense leading block cut mid-character at either boundary makes the whole file judged binary, so the generator copies it into every produced repository without rendering and without warning, shipping raw Jinja tags to readers. This block is the pure-ASCII guard that keeps the leading bytes decodable regardless of the Chinese body below. Do not localize, shorten, reorder or delete it; when restructuring this file, keep it as the first content, longer than 1024 bytes.
+  README is the entry document of this Linxi plugin repository: it describes the package layout, how Linxi imports the plugin through the linxi_plugin field of a pipeline YAML, the two loading entries (the linxi process CLI and PipelineDefinition.from_file), and the registration rules to keep while editing the package. NEXTSTEPS.md holds the step-by-step development guide. When publishing a real plugin, rewrite the Chinese body below to describe the actual feature set and keep this guard block untouched as the first content of the file.
+-->
+
 # {{ cookiecutter.repo_name }}
 
 {{ cookiecutter.description }}
