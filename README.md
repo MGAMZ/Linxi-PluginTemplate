@@ -10,15 +10,6 @@
 - 可选生成 processor 示例与 probe 示例
 - 文档默认围绕 Linxi 当前的 `linxi_plugin` 导入机制编写
 
-首版刻意保持轻量，不包含下列内容：
-
-- snakemake
-- scripts
-- tmp
-- CHANGELOG
-- pre-commit
-- GitHub Actions
-
 ## 使用方式
 
 1. 安装 Cookiecutter（本模板在 `cookiecutter==2.7.1` 下验证，请使用同一版本）：
